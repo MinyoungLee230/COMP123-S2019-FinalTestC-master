@@ -64,9 +64,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CharacterSheetPage = new System.Windows.Forms.TabPage();
-            this.NextButton = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.CSSkill4Label2 = new System.Windows.Forms.Label();
+            this.CSSkill3Label2 = new System.Windows.Forms.Label();
+            this.CSSkill2Label2 = new System.Windows.Forms.Label();
+            this.CSSkill1Label2 = new System.Windows.Forms.Label();
+            this.CSSocialStandingLabel2 = new System.Windows.Forms.Label();
+            this.CSEducationLabel2 = new System.Windows.Forms.Label();
+            this.CSIntellectLabel2 = new System.Windows.Forms.Label();
+            this.CSEnduranceLabel2 = new System.Windows.Forms.Label();
+            this.CSDexterityLabel2 = new System.Windows.Forms.Label();
+            this.CSStrengthLabel2 = new System.Windows.Forms.Label();
+            this.CSLastNameLabel2 = new System.Windows.Forms.Label();
+            this.CSFisrtNameLabel2 = new System.Windows.Forms.Label();
             this.CSFisrtNameLabel1 = new System.Windows.Forms.Label();
             this.CSLastNameLabel1 = new System.Windows.Forms.Label();
             this.CSStrengthLabel1 = new System.Windows.Forms.Label();
@@ -79,18 +89,8 @@
             this.CSSkill2Label1 = new System.Windows.Forms.Label();
             this.CSSkill3Label1 = new System.Windows.Forms.Label();
             this.CSSkill4Label1 = new System.Windows.Forms.Label();
-            this.CSFisrtNameLabel2 = new System.Windows.Forms.Label();
-            this.CSLastNameLabel2 = new System.Windows.Forms.Label();
-            this.CSStrengthLabel2 = new System.Windows.Forms.Label();
-            this.CSDexterityLabel2 = new System.Windows.Forms.Label();
-            this.CSEnduranceLabel2 = new System.Windows.Forms.Label();
-            this.CSIntellectLabel2 = new System.Windows.Forms.Label();
-            this.CSEducationLabel2 = new System.Windows.Forms.Label();
-            this.CSSocialStandingLabel2 = new System.Windows.Forms.Label();
-            this.CSSkill1Label2 = new System.Windows.Forms.Label();
-            this.CSSkill2Label2 = new System.Windows.Forms.Label();
-            this.CSSkill3Label2 = new System.Windows.Forms.Label();
-            this.CSSkill4Label2 = new System.Windows.Forms.Label();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.MainTabControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.IdentityTableLayoutPanel.SuspendLayout();
@@ -123,7 +123,7 @@
             this.IdentityPage.Margin = new System.Windows.Forms.Padding(2);
             this.IdentityPage.Name = "IdentityPage";
             this.IdentityPage.Padding = new System.Windows.Forms.Padding(2);
-            this.IdentityPage.Size = new System.Drawing.Size(541, 298);
+            this.IdentityPage.Size = new System.Drawing.Size(541, 297);
             this.IdentityPage.TabIndex = 0;
             this.IdentityPage.Text = "Identity";
             this.IdentityPage.UseVisualStyleBackColor = true;
@@ -231,7 +231,7 @@
             this.AbilityPage.Margin = new System.Windows.Forms.Padding(2);
             this.AbilityPage.Name = "AbilityPage";
             this.AbilityPage.Padding = new System.Windows.Forms.Padding(2);
-            this.AbilityPage.Size = new System.Drawing.Size(541, 298);
+            this.AbilityPage.Size = new System.Drawing.Size(541, 297);
             this.AbilityPage.TabIndex = 1;
             this.AbilityPage.Text = "Abilities";
             this.AbilityPage.UseVisualStyleBackColor = true;
@@ -324,6 +324,7 @@
             this.GenerateAbilitiesButton.TabIndex = 2;
             this.GenerateAbilitiesButton.Text = "Generate Abilities";
             this.GenerateAbilitiesButton.UseVisualStyleBackColor = true;
+            this.GenerateAbilitiesButton.Click += new System.EventHandler(this.GenerateAbilitiesButton_Click);
             // 
             // EnduranceLabel
             // 
@@ -453,7 +454,7 @@
             this.SkillsPage.Location = new System.Drawing.Point(4, 33);
             this.SkillsPage.Margin = new System.Windows.Forms.Padding(2);
             this.SkillsPage.Name = "SkillsPage";
-            this.SkillsPage.Size = new System.Drawing.Size(541, 298);
+            this.SkillsPage.Size = new System.Drawing.Size(541, 297);
             this.SkillsPage.TabIndex = 2;
             this.SkillsPage.Text = "Skills";
             this.SkillsPage.UseVisualStyleBackColor = true;
@@ -488,7 +489,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(525, 299);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(525, 298);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // GenerateSkillButton
@@ -500,7 +501,7 @@
             this.GenerateSkillButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenerateSkillButton.Location = new System.Drawing.Point(265, 255);
             this.GenerateSkillButton.Name = "GenerateSkillButton";
-            this.GenerateSkillButton.Size = new System.Drawing.Size(257, 41);
+            this.GenerateSkillButton.Size = new System.Drawing.Size(257, 40);
             this.GenerateSkillButton.TabIndex = 1;
             this.GenerateSkillButton.Text = "Generate Skills";
             this.GenerateSkillButton.UseVisualStyleBackColor = true;
@@ -638,28 +639,6 @@
             this.CharacterSheetPage.Text = "Character Sheet";
             this.CharacterSheetPage.UseVisualStyleBackColor = true;
             // 
-            // NextButton
-            // 
-            this.NextButton.Location = new System.Drawing.Point(442, 352);
-            this.NextButton.Margin = new System.Windows.Forms.Padding(2);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(96, 47);
-            this.NextButton.TabIndex = 1;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
-            // BackButton
-            // 
-            this.BackButton.Location = new System.Drawing.Point(11, 352);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(96, 47);
-            this.BackButton.TabIndex = 1;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
@@ -708,6 +687,175 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(530, 256);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // CSSkill4Label2
+            // 
+            this.CSSkill4Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSSkill4Label2.AutoSize = true;
+            this.CSSkill4Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill4Label2, 3);
+            this.CSSkill4Label2.Location = new System.Drawing.Point(135, 231);
+            this.CSSkill4Label2.Name = "CSSkill4Label2";
+            this.CSSkill4Label2.Size = new System.Drawing.Size(392, 25);
+            this.CSSkill4Label2.TabIndex = 23;
+            this.CSSkill4Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSSkill3Label2
+            // 
+            this.CSSkill3Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSSkill3Label2.AutoSize = true;
+            this.CSSkill3Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill3Label2, 3);
+            this.CSSkill3Label2.Location = new System.Drawing.Point(135, 210);
+            this.CSSkill3Label2.Name = "CSSkill3Label2";
+            this.CSSkill3Label2.Size = new System.Drawing.Size(392, 21);
+            this.CSSkill3Label2.TabIndex = 22;
+            this.CSSkill3Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSSkill2Label2
+            // 
+            this.CSSkill2Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSSkill2Label2.AutoSize = true;
+            this.CSSkill2Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill2Label2, 3);
+            this.CSSkill2Label2.Location = new System.Drawing.Point(135, 189);
+            this.CSSkill2Label2.Name = "CSSkill2Label2";
+            this.CSSkill2Label2.Size = new System.Drawing.Size(392, 21);
+            this.CSSkill2Label2.TabIndex = 21;
+            this.CSSkill2Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSSkill1Label2
+            // 
+            this.CSSkill1Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSSkill1Label2.AutoSize = true;
+            this.CSSkill1Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill1Label2, 3);
+            this.CSSkill1Label2.Location = new System.Drawing.Point(135, 168);
+            this.CSSkill1Label2.Name = "CSSkill1Label2";
+            this.CSSkill1Label2.Size = new System.Drawing.Size(392, 21);
+            this.CSSkill1Label2.TabIndex = 20;
+            this.CSSkill1Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSSocialStandingLabel2
+            // 
+            this.CSSocialStandingLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSSocialStandingLabel2.AutoSize = true;
+            this.CSSocialStandingLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSSocialStandingLabel2, 3);
+            this.CSSocialStandingLabel2.Location = new System.Drawing.Point(135, 147);
+            this.CSSocialStandingLabel2.Name = "CSSocialStandingLabel2";
+            this.CSSocialStandingLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSSocialStandingLabel2.TabIndex = 19;
+            this.CSSocialStandingLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSEducationLabel2
+            // 
+            this.CSEducationLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSEducationLabel2.AutoSize = true;
+            this.CSEducationLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSEducationLabel2, 3);
+            this.CSEducationLabel2.Location = new System.Drawing.Point(135, 126);
+            this.CSEducationLabel2.Name = "CSEducationLabel2";
+            this.CSEducationLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSEducationLabel2.TabIndex = 18;
+            this.CSEducationLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSIntellectLabel2
+            // 
+            this.CSIntellectLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSIntellectLabel2.AutoSize = true;
+            this.CSIntellectLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSIntellectLabel2, 3);
+            this.CSIntellectLabel2.Location = new System.Drawing.Point(135, 105);
+            this.CSIntellectLabel2.Name = "CSIntellectLabel2";
+            this.CSIntellectLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSIntellectLabel2.TabIndex = 17;
+            this.CSIntellectLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSEnduranceLabel2
+            // 
+            this.CSEnduranceLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSEnduranceLabel2.AutoSize = true;
+            this.CSEnduranceLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSEnduranceLabel2, 3);
+            this.CSEnduranceLabel2.Location = new System.Drawing.Point(135, 84);
+            this.CSEnduranceLabel2.Name = "CSEnduranceLabel2";
+            this.CSEnduranceLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSEnduranceLabel2.TabIndex = 16;
+            this.CSEnduranceLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSDexterityLabel2
+            // 
+            this.CSDexterityLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSDexterityLabel2.AutoSize = true;
+            this.CSDexterityLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSDexterityLabel2, 3);
+            this.CSDexterityLabel2.Location = new System.Drawing.Point(135, 63);
+            this.CSDexterityLabel2.Name = "CSDexterityLabel2";
+            this.CSDexterityLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSDexterityLabel2.TabIndex = 15;
+            this.CSDexterityLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSStrengthLabel2
+            // 
+            this.CSStrengthLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSStrengthLabel2.AutoSize = true;
+            this.CSStrengthLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSStrengthLabel2, 3);
+            this.CSStrengthLabel2.Location = new System.Drawing.Point(135, 42);
+            this.CSStrengthLabel2.Name = "CSStrengthLabel2";
+            this.CSStrengthLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSStrengthLabel2.TabIndex = 14;
+            this.CSStrengthLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSLastNameLabel2
+            // 
+            this.CSLastNameLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSLastNameLabel2.AutoSize = true;
+            this.CSLastNameLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSLastNameLabel2, 3);
+            this.CSLastNameLabel2.Location = new System.Drawing.Point(135, 21);
+            this.CSLastNameLabel2.Name = "CSLastNameLabel2";
+            this.CSLastNameLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSLastNameLabel2.TabIndex = 13;
+            this.CSLastNameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CSFisrtNameLabel2
+            // 
+            this.CSFisrtNameLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CSFisrtNameLabel2.AutoSize = true;
+            this.CSFisrtNameLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.CSFisrtNameLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.CSFisrtNameLabel2, 3);
+            this.CSFisrtNameLabel2.Location = new System.Drawing.Point(135, 0);
+            this.CSFisrtNameLabel2.Name = "CSFisrtNameLabel2";
+            this.CSFisrtNameLabel2.Size = new System.Drawing.Size(392, 21);
+            this.CSFisrtNameLabel2.TabIndex = 12;
+            this.CSFisrtNameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CSFisrtNameLabel1
             // 
@@ -866,174 +1014,27 @@
             this.CSSkill4Label1.Text = "Skill4";
             this.CSSkill4Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CSFisrtNameLabel2
+            // NextButton
             // 
-            this.CSFisrtNameLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSFisrtNameLabel2.AutoSize = true;
-            this.CSFisrtNameLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.CSFisrtNameLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSFisrtNameLabel2, 3);
-            this.CSFisrtNameLabel2.Location = new System.Drawing.Point(135, 0);
-            this.CSFisrtNameLabel2.Name = "CSFisrtNameLabel2";
-            this.CSFisrtNameLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSFisrtNameLabel2.TabIndex = 12;
-            this.CSFisrtNameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NextButton.Location = new System.Drawing.Point(442, 352);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(2);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(96, 47);
+            this.NextButton.TabIndex = 1;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // CSLastNameLabel2
+            // BackButton
             // 
-            this.CSLastNameLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSLastNameLabel2.AutoSize = true;
-            this.CSLastNameLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSLastNameLabel2, 3);
-            this.CSLastNameLabel2.Location = new System.Drawing.Point(135, 21);
-            this.CSLastNameLabel2.Name = "CSLastNameLabel2";
-            this.CSLastNameLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSLastNameLabel2.TabIndex = 13;
-            this.CSLastNameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSStrengthLabel2
-            // 
-            this.CSStrengthLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSStrengthLabel2.AutoSize = true;
-            this.CSStrengthLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSStrengthLabel2, 3);
-            this.CSStrengthLabel2.Location = new System.Drawing.Point(135, 42);
-            this.CSStrengthLabel2.Name = "CSStrengthLabel2";
-            this.CSStrengthLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSStrengthLabel2.TabIndex = 14;
-            this.CSStrengthLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSDexterityLabel2
-            // 
-            this.CSDexterityLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSDexterityLabel2.AutoSize = true;
-            this.CSDexterityLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSDexterityLabel2, 3);
-            this.CSDexterityLabel2.Location = new System.Drawing.Point(135, 63);
-            this.CSDexterityLabel2.Name = "CSDexterityLabel2";
-            this.CSDexterityLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSDexterityLabel2.TabIndex = 15;
-            this.CSDexterityLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSEnduranceLabel2
-            // 
-            this.CSEnduranceLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSEnduranceLabel2.AutoSize = true;
-            this.CSEnduranceLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSEnduranceLabel2, 3);
-            this.CSEnduranceLabel2.Location = new System.Drawing.Point(135, 84);
-            this.CSEnduranceLabel2.Name = "CSEnduranceLabel2";
-            this.CSEnduranceLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSEnduranceLabel2.TabIndex = 16;
-            this.CSEnduranceLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSIntellectLabel2
-            // 
-            this.CSIntellectLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSIntellectLabel2.AutoSize = true;
-            this.CSIntellectLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSIntellectLabel2, 3);
-            this.CSIntellectLabel2.Location = new System.Drawing.Point(135, 105);
-            this.CSIntellectLabel2.Name = "CSIntellectLabel2";
-            this.CSIntellectLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSIntellectLabel2.TabIndex = 17;
-            this.CSIntellectLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSEducationLabel2
-            // 
-            this.CSEducationLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSEducationLabel2.AutoSize = true;
-            this.CSEducationLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSEducationLabel2, 3);
-            this.CSEducationLabel2.Location = new System.Drawing.Point(135, 126);
-            this.CSEducationLabel2.Name = "CSEducationLabel2";
-            this.CSEducationLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSEducationLabel2.TabIndex = 18;
-            this.CSEducationLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSSocialStandingLabel2
-            // 
-            this.CSSocialStandingLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSSocialStandingLabel2.AutoSize = true;
-            this.CSSocialStandingLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSSocialStandingLabel2, 3);
-            this.CSSocialStandingLabel2.Location = new System.Drawing.Point(135, 147);
-            this.CSSocialStandingLabel2.Name = "CSSocialStandingLabel2";
-            this.CSSocialStandingLabel2.Size = new System.Drawing.Size(392, 21);
-            this.CSSocialStandingLabel2.TabIndex = 19;
-            this.CSSocialStandingLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSSkill1Label2
-            // 
-            this.CSSkill1Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSSkill1Label2.AutoSize = true;
-            this.CSSkill1Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill1Label2, 3);
-            this.CSSkill1Label2.Location = new System.Drawing.Point(135, 168);
-            this.CSSkill1Label2.Name = "CSSkill1Label2";
-            this.CSSkill1Label2.Size = new System.Drawing.Size(392, 21);
-            this.CSSkill1Label2.TabIndex = 20;
-            this.CSSkill1Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSSkill2Label2
-            // 
-            this.CSSkill2Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSSkill2Label2.AutoSize = true;
-            this.CSSkill2Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill2Label2, 3);
-            this.CSSkill2Label2.Location = new System.Drawing.Point(135, 189);
-            this.CSSkill2Label2.Name = "CSSkill2Label2";
-            this.CSSkill2Label2.Size = new System.Drawing.Size(392, 21);
-            this.CSSkill2Label2.TabIndex = 21;
-            this.CSSkill2Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSSkill3Label2
-            // 
-            this.CSSkill3Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSSkill3Label2.AutoSize = true;
-            this.CSSkill3Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill3Label2, 3);
-            this.CSSkill3Label2.Location = new System.Drawing.Point(135, 210);
-            this.CSSkill3Label2.Name = "CSSkill3Label2";
-            this.CSSkill3Label2.Size = new System.Drawing.Size(392, 21);
-            this.CSSkill3Label2.TabIndex = 22;
-            this.CSSkill3Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CSSkill4Label2
-            // 
-            this.CSSkill4Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSSkill4Label2.AutoSize = true;
-            this.CSSkill4Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tableLayoutPanel3.SetColumnSpan(this.CSSkill4Label2, 3);
-            this.CSSkill4Label2.Location = new System.Drawing.Point(135, 231);
-            this.CSSkill4Label2.Name = "CSSkill4Label2";
-            this.CSSkill4Label2.Size = new System.Drawing.Size(392, 25);
-            this.CSSkill4Label2.TabIndex = 23;
-            this.CSSkill4Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BackButton.Location = new System.Drawing.Point(11, 352);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(96, 47);
+            this.BackButton.TabIndex = 1;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // CharacterGenerationForm
             // 

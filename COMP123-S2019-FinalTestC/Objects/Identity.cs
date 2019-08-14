@@ -27,7 +27,10 @@ namespace COMP123_S2019_FinalTestC.Objects
         }
         //public void GenerateNames()
         //{
-        //    Random firstname = 
+        //    Random rand = new Random();
+        //    rand.FirstName(fnl);
+        //    rand.LastName(lnl);
+
         //}
 
     }

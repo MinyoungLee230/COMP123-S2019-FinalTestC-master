@@ -56,5 +56,26 @@ namespace COMP123_S2019_FinalTestC.Views
         {
 
         }
+
+        private void StrengthDataLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenerateAbilitiesButton_Click(object sender, EventArgs e)
+        {
+            int randomNumber1 = new Random().Next(1, 15) + 1;
+            StrengthDataLabel.Text = randomNumber1.ToString();
+            int randomNumber2 = new Random().Next(1, 15) + 1;
+            DexterityDataLabel.Text = randomNumber2.ToString();
+            int randomNumber3 = new Random().Next(1, 15) + 1;
+            EnduranceDataLabel.Text = randomNumber3.ToString();
+            int randomNumber4 = new Random().Next(1, 15) + 1;
+            IntellectDataLabel.Text = randomNumber4.ToString();
+            int randomNumber5 = new Random().Next(1, 15) + 1;
+            EducationDataLabel.Text = randomNumber5.ToString();
+            int randomNumber6 = new Random().Next(1, 15) + 1;
+            SocialStandingDataLabel.Text = randomNumber6.ToString();
+        }
     }
 }
