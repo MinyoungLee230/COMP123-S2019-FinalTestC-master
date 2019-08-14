@@ -7,8 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 
 /*
- * STUDENT NAME:
- * STUDENT ID:
+ * STUDENT NAME:Minyoung Lee
+ * STUDENT ID:300983741
  * DESCRIPTION: This is the main form for the application
  */
 

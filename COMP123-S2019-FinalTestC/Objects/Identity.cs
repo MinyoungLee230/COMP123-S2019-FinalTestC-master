@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 
 /*
- * STUDENT NAME:
- * STUDENT ID:
+ * STUDENT NAME:Minyoung Lee
+ * STUDENT ID:300983741
  * DESCRIPTION: This is the Identity Class to be used with the CharacterPortfolio class
  */
 
@@ -22,8 +22,8 @@ namespace COMP123_S2019_FinalTestC.Objects
 
         public void LoadNames()
         {
-            StreamReader fnl = new StreamReader("firstNames.txt");
-            StreamReader lnl = new StreamReader("lastNames.txt");
+            StreamReader fnl = new StreamReader("../../Data/firstNames.txt");
+            StreamReader lnl = new StreamReader("../../Data/lastNames.txt");
         }
         //public void GenerateNames()
         //{
