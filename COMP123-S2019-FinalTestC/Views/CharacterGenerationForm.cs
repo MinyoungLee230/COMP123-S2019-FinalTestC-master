@@ -46,6 +46,10 @@ namespace COMP123_S2019_FinalTestC.Views
                 MainTabControl.SelectedIndex++;
             }
         }
+        private void GenerateNameButton_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void FirstNameDataLabel_Click(object sender, EventArgs e)
         {

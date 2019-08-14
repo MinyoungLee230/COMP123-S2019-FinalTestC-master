@@ -177,7 +177,7 @@
             this.GenerateNameButton.TabIndex = 1;
             this.GenerateNameButton.Text = "Generate Name";
             this.GenerateNameButton.UseVisualStyleBackColor = true;
-            this.GenerateNameButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.GenerateNameButton.Click += new System.EventHandler(this.GenerateNameButton_Click);
             // 
             // LastNameLabel
             // 
